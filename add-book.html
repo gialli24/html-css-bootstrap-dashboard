@@ -58,11 +58,13 @@
                 <div class="row">
                     <div class="col mb-3">
                         <label for="author-first-name" class="form-label fw-medium">Nome Autore</label>
-                        <input type="text" class="form-control" id="author-first-name" required>
+                        <input type="text" class="form-control" id="author-first-name"
+                            placeholder="Inserisci il nome dell'autore" required>
                     </div>
                     <div class="col mb-3">
                         <label for="author-last-name" class="form-label fw-medium">Cognome Autore</label>
-                        <input type="text" class="form-control" id="author-last-name" required>
+                        <input type="text" class="form-control" id="author-last-name"
+                            placeholder="Inserisci il cognome dell'autore" required>
                     </div>
                 </div>
                 <!-- /Author -->
@@ -70,7 +72,8 @@
                 <!-- Book -->
                 <div class="mb-3">
                     <label for="book-title" class="form-label fw-medium">Titolo</label>
-                    <input type="text" class="form-control" id="book-title" required>
+                    <input type="text" class="form-control" id="book-title" placeholder="Inserisci il titolo del libro"
+                        required>
                     <div class="form-text" id="book-title-addon">Titolo versione italiana</div>
                 </div>
 
@@ -87,13 +90,14 @@
 
                     <div class="col-12 col-lg-4 mb-3">
                         <label for="book-year" class="form-label fw-medium">Anno di Pubblicazione</label>
-                        <input type="number" max="2026" step="1" class="form-control" id="book-year" required>
+                        <input type="number" max="2026" step="1" class="form-control" id="book-year"
+                            placeholder="Inserisci l'anno" required>
                     </div>
 
                     <div class="col-12 col-lg-4 mb-3">
                         <label for="book-isbn" class="form-label fw-medium">ISBN#</label>
                         <input type="number" min="9780000000000" maxlength="9799999999999" class="form-control"
-                            id="book-isbn" required>
+                            id="book-isbn" placeholder="Inserisci il codice ISBN#" required>
                     </div>
                 </div>
                 <!-- /Book -->
@@ -110,7 +114,7 @@
 
                 <!-- Digital Checkbox -->
                 <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="" id="digital-version-checkbox">
+                    <input class="form-check-input" type="checkbox" id="digital-version-checkbox">
                     <label class="form-check-label fs-6 fw-medium" for="digital-version-checkbox">
                         Disponibile anche in digitale
                     </label>
