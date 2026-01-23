@@ -42,10 +42,6 @@
                         <a class="nav-link" aria-current="page" href="#">Help</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" data-bs-theme="light">
-                    <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-                    <button class="btn btn-outline-light" type="submit">Cerca</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -53,7 +49,79 @@
 
     <!-- Main -->
     <main>
-        <div class="container py-4"></div>
+        <div class="container py-4">
+            <h1 class="fs-2  mb-4">Catalogo Libri</h1>
+
+            <form action="" class="add-book-form">
+
+                <!-- Author -->
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="author-first-name" class="form-label fw-medium">Nome Autore</label>
+                        <input type="text" class="form-control" id="author-first-name" required>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="author-last-name" class="form-label fw-medium">Cognome Autore</label>
+                        <input type="text" class="form-control" id="author-last-name" required>
+                    </div>
+                </div>
+                <!-- /Author -->
+
+                <!-- Book -->
+                <div class="mb-3">
+                    <label for="book-title" class="form-label fw-medium">Titolo</label>
+                    <input type="text" class="form-control" id="book-title" required>
+                    <div class="form-text" id="book-title-addon">Titolo versione italiana</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="book-genre" class="form-label fw-medium">Genere</label>
+                        <select class="form-select" aria-label="Genre book selector" id="book-genre" required>
+                            <option selected disabled>Scegli il genere</option>
+                            <option value="narrative">Narrativa</option>
+                            <option value="fantasi">Fantasy</option>
+                            <option value="giallo">Giallo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="book-year" class="form-label fw-medium">Anno di Pubblicazione</label>
+                        <input type="number" max="2026" step="1" class="form-control" id="book-year" required>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="book-isbn" class="form-label fw-medium">ISBN#</label>
+                        <input type="number" min="9780000000000" maxlength="9799999999999" class="form-control"
+                            id="book-isbn" required>
+                    </div>
+                </div>
+                <!-- /Book -->
+
+                <hr class="border border-secondary opacity-30">
+
+                <!-- Notes -->
+                <div class="mb-3">
+                    <label for="notes" class="form-label fw-medium">Note</label>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="notes"
+                        style="height: 100px"></textarea>
+                </div>
+                <!-- /Notes -->
+
+                <!-- Digital Checkbox -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="digital-version-checkbox">
+                    <label class="form-check-label fs-6 fw-medium" for="digital-version-checkbox">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+                <!-- /Digital Checkbox -->
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
+            <!-- /.add-book-form -->
+        </div>
     </main>
     <!-- /Main -->
 
